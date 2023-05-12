@@ -1,6 +1,8 @@
 { pkgs, lib, config, ... }: {
   home = {
     activation = {
+      packages = [ pkgs.git ];
+      
       awesome = ''
         CONFIG="$HOME/.config/awesome"
 
