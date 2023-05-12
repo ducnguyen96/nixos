@@ -29,5 +29,5 @@
       rofi
       feh
       ranger
-    ]
+    ];
 }
