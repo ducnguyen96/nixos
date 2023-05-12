@@ -44,6 +44,15 @@
 
   services = {
     xserver = {
+      displayManager = {
+        sddm.enable = true;
+        defaultSession = "none+awesome";
+      };
+
+      windowManager.awesome = {
+        enable = true;
+      };
+
       libinput = {
         enable = true;
         touchpad = {naturalScrolling = true;};
@@ -51,9 +60,6 @@
       xkbOptions = "caps:escape";
     };
   };
-
-  # Use custom Awesome WM module
-  services.xserver.windowManager.awesome.enable = true;
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.05";
