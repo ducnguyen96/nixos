@@ -10,7 +10,7 @@
   environment = with pkgs; {
     binsh = lib.getExe bash;
     shells = [zsh];
-    pathsToLink = ["/share/zsh"];
+    pathsToLink = ["/share/zsh" pkgs.zsh ];
 
     loginShellInit = ''
       dbus-update-activation-environment --all
