@@ -5,7 +5,9 @@
 }: let
   ifTheyExist = groups: builtins.filter (group: builtins.hasAttr group config.users.groups) groups;
 in {
+  programs.zsh.enable = true;
   users.mutableUsers = false;
+  users.defaultUserShell = pkgs.zsh;
   users.users.ducng = {
     description = "Duc Nguyen";
     initialPassword = "1";
