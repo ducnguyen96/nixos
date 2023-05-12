@@ -4,4 +4,5 @@ with pkgs; [
   dconf
   git
   libnotify
+  zsh
 ]
