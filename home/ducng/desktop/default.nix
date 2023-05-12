@@ -14,5 +14,8 @@
     ./desktop
     ./services
     ./X
+
+    # Window Manager configuration
+    .../shared/wm/awesome
   ];
 }
