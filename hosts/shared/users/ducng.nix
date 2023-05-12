@@ -11,7 +11,6 @@ in {
     initialPassword = "nixos";
     isNormalUser = true;
     uid = 1000;
-    shell = pkgs.zsh;
     extraGroups =
       [
         "wheel"
@@ -32,6 +31,7 @@ in {
 
     packages = [pkgs.home-manager];
   };
+  programs.zsh.enable = true;
 
   home-manager.users.ducng = import ../../../home/ducng/${config.networking.hostName};
 }
