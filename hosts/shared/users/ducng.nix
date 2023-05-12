@@ -8,7 +8,7 @@ in {
   users.mutableUsers = false;
   users.users.ducng = {
     description = "Duc Nguyen";
-    initialPassword = "nixos";
+    initialPassword = "1";
     isNormalUser = true;
     uid = 1000;
     extraGroups =
