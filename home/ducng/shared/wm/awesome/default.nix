@@ -1,7 +1,13 @@
-{ pkgs, lib, config, ... }:
+{ pkgs, lib, config, ... }: {
+  home = {
+    activation = {
+      awesome = ''
+        CONFIG="$HOME/.config/awesome"
 
-{
-  imports = [
-    ./rc.nix
-  ];
+        if [ ! -d "$CONFIG" ]; then
+          git clone https://github.com/ducnguyen96/rice-manual $CONFIG
+        fi
+      '';
+    };
+  };
 }
