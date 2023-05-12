@@ -29,10 +29,6 @@
   };
 
   nixpkgs = {
-    overlays = [
-      outputs.overlays.default
-    ];
-
     config = {
       allowUnfree = true;
       allowUnfreePredicate = _: true;
