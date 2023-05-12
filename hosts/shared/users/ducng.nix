@@ -10,6 +10,7 @@ in {
     description = "Duc Nguyen";
     initialPassword = "1";
     isNormalUser = true;
+    shell = pkgs.zsh;
     uid = 1000;
     extraGroups =
       [
