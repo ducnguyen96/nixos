@@ -9,6 +9,7 @@
     ../shared
     ../shared/optional/programs/alacritty.nix
     ../shared/optional/programs/firefox.nix
+    ../shared/optional/programs/vscode.nix
 
     # Specific configuration
     ./desktop
