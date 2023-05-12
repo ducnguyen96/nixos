@@ -10,6 +10,6 @@
           git clone https://github.com/ducnguyen96/rice-manual $CONFIG
         fi
       '';
-    }
+    };
   };
 }
