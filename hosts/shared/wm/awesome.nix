@@ -21,4 +21,13 @@
       xkbOptions = "caps:escape";
     };
   };
+
+  environment.systemPackages = with pkgs;
+    [
+      pulsemixer
+      imagemagick
+      rofi
+      feh
+      ranger
+    ]
 }
