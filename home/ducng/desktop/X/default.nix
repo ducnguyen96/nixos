@@ -1,6 +1,5 @@
 {
   xresources.extraConfig = ''
-    Xft.dpi: 144
     Xft.antialias: true
     Xft.hinting: true
     Xft.rgba: rgb
