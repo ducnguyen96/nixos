@@ -2,4 +2,5 @@
 with pkgs; [
   dbus
   dconf
+  git
 ]
