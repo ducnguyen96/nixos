@@ -54,6 +54,8 @@
       windowManager.awesome = {
         enable = true;
         config = {
+          terminal = "alacritty";
+
           theme = {
             # Colors
             bg_normal = "#282c34";
