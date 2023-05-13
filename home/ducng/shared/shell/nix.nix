@@ -1,7 +1,8 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   home = {
     packages = with pkgs; [
       any-nix-shell
+      nixpkgs-fmt
     ];
 
     sessionVariables = {
@@ -9,6 +10,5 @@
     };
   };
 
-  programs = {
-  };
+  programs = { };
 }

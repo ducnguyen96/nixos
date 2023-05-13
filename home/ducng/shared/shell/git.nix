@@ -47,6 +47,7 @@
       "*result*"
       ".direnv"
       "node_modules"
+      "hardware-configuration.nix"
     ];
   };
 }

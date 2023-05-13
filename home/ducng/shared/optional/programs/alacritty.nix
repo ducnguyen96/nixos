@@ -9,14 +9,13 @@
 
       window = {
         padding = {
-          x = 20;
-          y = 20;
+          x = 15;
         };
 
         dynamic_padding = true;
         dynamic_title = false;
         decorations_theme_variant = "Dark";
-        opacity = 1.0;
+        opacity = 0.75;
       };
 
       font = {
