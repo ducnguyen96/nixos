@@ -11,6 +11,10 @@
     };
     packages = with pkgs; [
       acpi
+      light
+      brightnessctl
+      pulseaudio
+      alsa-utils
     ];
   };
 }
