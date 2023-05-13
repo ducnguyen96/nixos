@@ -9,5 +9,8 @@
         fi
       '';
     };
+    packages = with pkgs; [
+      acpi
+    ];
   };
 }
