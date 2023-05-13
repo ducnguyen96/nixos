@@ -5,7 +5,7 @@
         CONFIG="$HOME/.config/awesome"
 
         if [ ! -d "$CONFIG" ]; then
-          ${pkgs.git}/bin/git clone https://github.com/ducnguyen96/awesome $CONFIG
+          ${pkgs.git}/bin/git clone https://github.com/ducnguyen96/awesomewm $CONFIG
         fi
       '';
     };
