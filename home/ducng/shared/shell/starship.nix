@@ -10,12 +10,12 @@
       add_newline = true;
       line_break.disabled = true;
 
-      format = "$directory$git_branch$git_metrics$git_commit$git_state$git_status$all";
+      format = "$directory$git_branch$git_metrics$git_commit$git_state$git_status \ $all";
 
       character = {
-        success_symbol = "[λ](green)";
-        error_symbol = "[λ](red)";
-        vimcmd_symbol = "[λ](green)";
+        success_symbol = "[❄](green)";
+        error_symbol = "[❄](red)";
+        vimcmd_symbol = "[❄](green)";
       };
 
       directory = {
