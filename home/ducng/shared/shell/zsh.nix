@@ -1,8 +1,7 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
+{ config
+, lib
+, pkgs
+, ...
 }: {
   programs.zsh = {
     enable = true;
@@ -31,7 +30,7 @@
         --color fg:#6c7086
         --color fg+:#1e1e2e
         --color bg:#313244
-        --color bg+:#cba6f7
+        --color bg+:#7e59ab
         --color hl:#f5e0dc
         --color hl+:#313244
         --color info:#585b70
@@ -39,7 +38,7 @@
         --color prompt:#a6e3a1
         --color spinner:#f38ba8
         --color pointer:#1e1e2e
-        --color header:#cba6f7
+        --color header:#7e59ab
         --color preview-fg:#f5e0dc
         --color preview-bg:#1e1e2e
         --color gutter:#313244
@@ -78,13 +77,13 @@
       enable = true;
       zplugHome = "${config.xdg.configHome}/zsh/zplug";
       plugins = [
-        {name = "Aloxaf/fzf-tab";}
-        {name = "zdharma-continuum/fast-syntax-highlighting";}
-        {name = "zsh-users/zsh-history-substring-search";}
-        {name = "zsh-users/zsh-completions";}
-        {name = "zsh-users/zsh-autosuggestions";}
-        {name = "hlissner/zsh-autopair";}
-        {name = "chisui/zsh-nix-shell";}
+        { name = "Aloxaf/fzf-tab"; }
+        { name = "zdharma-continuum/fast-syntax-highlighting"; }
+        { name = "zsh-users/zsh-history-substring-search"; }
+        { name = "zsh-users/zsh-completions"; }
+        { name = "zsh-users/zsh-autosuggestions"; }
+        { name = "hlissner/zsh-autopair"; }
+        { name = "chisui/zsh-nix-shell"; }
       ];
     };
   };
