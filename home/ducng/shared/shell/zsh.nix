@@ -171,7 +171,7 @@
       commit = "git add . && git commit -m";
       push = "git push";
       pull = "git pull";
-      m = "mkdir -p";
+      mk = "mkdir -p";
       fcd = "cd $(find -type d | fzf)";
       grep = lib.getExe ripgrep;
       du = lib.getExe du-dust;
@@ -185,8 +185,21 @@
       ytmp3 = ''
         ${lib.getExe yt-dlp} -x --continue --add-metadata --embed-thumbnail --audio-format mp3 --audio-quality 0 --metadata-from-title="%(artist)s - %(title)s" --prefer-ffmpeg -o "%(title)s.%(ext)s"
       '';
-
       f = "fuck";
+      nsc = "export NIXPKGS_ALLOW_UNFREE=1; nix-shell $HOME/nix/nixos/shells/nsc/nsc.nix";
+      nsca = "export NIXPKGS_ALLOW_UNFREE=1; nix-shell $HOME/nix/nixos/shells/nsc/nsc_alt.nix";
+      cf = "$HOME/.config";
+      D  = "$HOME/Downloads";
+      d = "$HOME/Documents";
+      dt = "$HOME/.local/share";
+      rr = "$HOME/.local/src";
+      h = "$HOME";
+      m = "$HOME/Music";
+      mn = "/mnt";
+      pp = "$HOME/Pictures";
+      sc = "$HOME/.local/bin";
+      src = "$HOME/.local/src";
+      vv = "$HOME/Videos";
     };
 
     zplug = {
