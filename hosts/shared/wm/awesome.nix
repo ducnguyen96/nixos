@@ -8,6 +8,10 @@
       displayManager = {
         sddm.enable = true;
         defaultSession = "none+awesome";
+        sessionCommands = ''
+          # Start the IBus daemon
+          ibus-daemon --xim --daemonize
+        '';
       };
 
       windowManager.awesome = {
