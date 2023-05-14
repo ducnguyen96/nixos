@@ -9,6 +9,7 @@
     unzip
     wget
     zip
+    thefuck
   ];
 
   programs = {

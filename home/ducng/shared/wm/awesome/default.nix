@@ -15,6 +15,8 @@
       brightnessctl
       pulseaudio
       alsa-utils
+      xclip
+      xorg.xev
     ];
   };
 }
