@@ -40,7 +40,7 @@
   };
 
   networking = {
-    hostName = "desktop";
+    hostName = "laptop";
     networkmanager.enable = true;
     useDHCP = false;
   };
