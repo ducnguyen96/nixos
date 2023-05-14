@@ -31,6 +31,11 @@
         specialArgs = {inherit inputs outputs;};
         modules = [./hosts/desktop];
       };
+
+      laptop = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [./hosts/laptop];
+      };
     };
 
     homeConfigurations = {
@@ -38,6 +43,12 @@
         pkgs = nixpkgs.legacyPackages."x86_64-linux";
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [./home/ducng/desktop];
+      };
+
+      "ducng@laptop" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages."x86_64-linux";
+        extraSpecialArgs = {inherit inputs outputs;};
+        modules = [./home/ducng/laptop];
       };
     };
   };
