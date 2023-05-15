@@ -10,8 +10,11 @@
       add_newline = true;
       line_break.disabled = true;
 
-      format = "$directory$git_branch$git_metrics$git_commit$git_state$git_status\n$all";
-
+      format = ''
+[┌───>](bold fg:111)$directory$git_branch$git_status
+[└─>](bold fg:111)
+      '';
+      
       character = {
         success_symbol = "[❄](green)";
         error_symbol = "[❄](red)";
@@ -23,9 +26,9 @@
         style = "cyan";
       };
 
-      git_commit.tag_symbol = " tag ";
+      git_commit.tag_symbol = " 🏷 ";
       git_branch = {
-        style = "purple";
+        style = "fg:117";
         symbol = "";
       };
 
@@ -35,7 +38,7 @@
         disabled = false;
       };
 
-      aws.symbol = "aws ";
+      aws.symbol = "🅰 ";
       bun.symbol = "bun ";
       c.symbol = "C ";
       cobol.symbol = "cobol ";
@@ -46,8 +49,8 @@
       dart.symbol = "dart ";
       deno.symbol = "deno ";
       dotnet.symbol = ".NET ";
-      directory.read_only = " ro";
-      docker_context.symbol = "docker ";
+      directory.read_only = " 🔒";
+      docker_context.symbol = "🐳 ";
       elixir.symbol = "exs ";
       elm.symbol = "elm ";
       golang.symbol = "go ";
@@ -56,28 +59,28 @@
       java.symbol = "java ";
       julia.symbol = "jl ";
       kotlin.symbol = "kt ";
-      lua.symbol = "lua ";
+      lua.symbol = "🌙 ";
       memory_usage.symbol = "memory ";
       meson.symbol = "meson ";
       nim.symbol = "nim ";
-      nix_shell.symbol = "nix ";
+      nix_shell.symbol = "❄️ ";
       ocaml.symbol = "ml ";
       opa.symbol = "opa ";
-      nodejs.symbol = "nodejs ";
+      nodejs.symbol = " ";
       package.symbol = "pkg ";
       perl.symbol = "pl ";
       php.symbol = "php ";
       pulumi.symbol = "pulumi ";
       purescript.symbol = "purs ";
-      python.symbol = "py ";
+      python.symbol = "🐍 ";
       raku.symbol = "raku ";
       ruby.symbol = "rb ";
-      rust.symbol = "rs ";
+      rust.symbol = "🦀 ";
       scala.symbol = "scala ";
       spack.symbol = "spack ";
-      sudo.symbol = "sudo ";
+      sudo.symbol = "🧙 ";
       swift.symbol = "swift ";
-      terraform.symbol = "terraform ";
+      terraform.symbol = "💠 ";
       zig.symbol = "zig ";
     };
   };
