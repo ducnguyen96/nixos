@@ -11,9 +11,15 @@
       line_break.disabled = true;
 
       format = ''
-[┌───>](bold fg:111)$directory$git_branch$git_status
-[└─>](bold fg:111)
+[┌──>](bold fg:111) in $directory$git_branch$git_status
+[└>](bold fg:111) $username
       '';
+
+      username = {
+        show_always = true;
+        format = "[$user]($style) 💬 ";
+        style_user = "bold cyan";
+      };
       
       character = {
         success_symbol = "[❄](green)";
