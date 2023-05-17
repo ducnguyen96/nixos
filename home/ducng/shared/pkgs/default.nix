@@ -14,6 +14,7 @@ in
       (pkgs)
         authy
         sqlite
+        maim
       ;
 
     bookmark = bookmark;
