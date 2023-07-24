@@ -17,7 +17,7 @@
     ./hardware-configuration.nix
 
     # window manager
-    ../shared/wm/awesome.nix
+    ../shared/wm/sway.nix
   ];
 
   boot = {

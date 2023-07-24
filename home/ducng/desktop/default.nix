@@ -13,10 +13,10 @@
 
     # Specific configuration
     ./desktop
-    ./services
-    ./X
+    # ./services
+    # ./X
 
     # Window Manager configuration
-    ../shared/wm/awesome
+    # ../shared/wm/awesome
   ];
 }
