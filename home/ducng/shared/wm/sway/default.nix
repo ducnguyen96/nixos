@@ -1,9 +1,13 @@
 { pkgs, lib, config, ... }: {
-  wayland.windowManager.sway = {
-    enable = true;
-    config = rec {
-      modifier = "Mod4";
-      terminal = "alacritty"; 
+  home = {
+    activation = {
+      awesome = ''
+        CONFIG="$HOME/.config/sway"
+
+        if [ ! -d "$CONFIG" ]; then
+          ${pkgs.git}/bin/git clone https://github.com/ducnguyen96/sway $CONFIG
+        fi
+      '';
     };
   };
 }

@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    ./pipewire.nix
+    # ./pipewire.nix
     ./pritunl.nix
   ];
 

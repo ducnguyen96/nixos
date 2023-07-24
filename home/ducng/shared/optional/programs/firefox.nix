@@ -3,12 +3,6 @@
   pkgs,
   ...
 }: {
-  home.sessionVariables = {
-    MOZ_USE_XINPUT2 = "1";
-    MOZ_DISABLE_RDD_SANDBOX = "1";
-  };
-
-  programs.firefox = {
-    enable = true;
-  };
+  # Home Manager when not using any additional Firefox options
+  home.packages = with pkgs; [ firefox-wayland ];
 }
