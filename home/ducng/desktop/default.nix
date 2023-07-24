@@ -18,5 +18,6 @@
 
     # Window Manager configuration
     # ../shared/wm/awesome
+    ../shared/wm/sway
   ];
 }
