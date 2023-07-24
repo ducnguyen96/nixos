@@ -43,7 +43,6 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
-    alacritty # gpu accelerated terminal
     dbus-sway-environment
     configure-gtk
     wayland
@@ -59,6 +58,7 @@ in
     bemenu # wayland clone of dmenu
     mako # notification system developed by swaywm maintainer
     wdisplays # tool to configure displays
+    pulsemixer
   ];
 
   # xdg-desktop-portal works by exposing a series of D-Bus interfaces

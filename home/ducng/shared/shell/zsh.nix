@@ -186,6 +186,7 @@
         ${lib.getExe yt-dlp} -x --continue --add-metadata --embed-thumbnail --audio-format mp3 --audio-quality 0 --metadata-from-title="%(artist)s - %(title)s" --prefer-ffmpeg -o "%(title)s.%(ext)s"
       '';
       rebuild = "sudo nixos-rebuild switch --flake $HOME/nix/nixos#$hostname";
+      switch = "home-manager switch --flake $HOME/nix/nixos#ducng@desktop";
       f = "fuck";
       nsc = "export NIXPKGS_ALLOW_UNFREE=1; nix-shell $HOME/nix/nixos/shells/nsc/nsc.nix";
       nsca = "export NIXPKGS_ALLOW_UNFREE=1; nix-shell $HOME/nix/nixos/shells/nsc/nsc_alt.nix";

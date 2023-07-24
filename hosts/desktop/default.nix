@@ -45,11 +45,16 @@
     useDHCP = false;
   };
 
-  services.xserver.videoDrivers = [ "nvidia" ];
-  hardware.opengl.enable = true;
+  # services.xserver.videoDrivers = [ "nvidia" ];
+  # hardware.opengl.enable = true;
 
   # Optionally, you may need to select the appropriate driver version for your specific GPU.
-  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
+  # hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
+
+  virtualisation = {
+    waydroid.enable = true;
+    lxd.enable = true;
+  };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.05";

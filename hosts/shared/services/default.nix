@@ -5,6 +5,7 @@
 }: {
   imports = [
     ./pipewire.nix
+    ./pritunl.nix
   ];
 
   services = {

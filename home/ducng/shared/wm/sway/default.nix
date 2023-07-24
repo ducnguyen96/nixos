@@ -2,7 +2,8 @@
   wayland.windowManager.sway = {
     enable = true;
     config = rec {
-      modifier = "Mod1";
+      modifier = "Mod4";
+      terminal = "alacritty"; 
     };
   };
 }
