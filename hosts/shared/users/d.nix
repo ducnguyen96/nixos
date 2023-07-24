@@ -8,7 +8,7 @@ in {
   programs.zsh.enable = true;
   users.mutableUsers = false;
   users.defaultUserShell = pkgs.zsh;
-  users.users.ducng = {
+  users.users.d = {
     description = "Duc Nguyen";
     initialPassword = "1";
     isNormalUser = true;
@@ -35,5 +35,5 @@ in {
     packages = [pkgs.home-manager];
   };
 
-  home-manager.users.ducng = import ../../../home/ducng/${config.networking.hostName};
+  home-manager.users.d = import ../../../home/d/${config.networking.hostName};
 }

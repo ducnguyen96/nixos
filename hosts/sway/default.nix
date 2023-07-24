@@ -11,13 +11,10 @@
     ../shared
 
     # Select the user configuration
-    ../shared/users/ducng.nix
+    ../shared/users/d.nix
 
     # Specific configuration
     ./hardware-configuration.nix
-
-    # window manager
-    ../shared/wm/awesome.nix
   ];
 
   boot = {
@@ -40,16 +37,10 @@
   };
 
   networking = {
-    hostName = "desktop";
+    hostName = "sway";
     networkmanager.enable = true;
     useDHCP = false;
   };
-
-  services.xserver.videoDrivers = [ "nvidia" ];
-  hardware.opengl.enable = true;
-
-  # Optionally, you may need to select the appropriate driver version for your specific GPU.
-  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.05";

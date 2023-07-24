@@ -1,6 +1,6 @@
 {
   environment.variables = {
-    EDITOR = "nano";
+    EDITOR = "foot";
     BROWSER = "firefox";
   };
 }

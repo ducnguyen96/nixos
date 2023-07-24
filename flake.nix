@@ -27,28 +27,17 @@
     devShells = forEachPkgs (pkgs: import ./shell.nix {inherit pkgs;});
 
     nixosConfigurations = {
-      desktop = nixpkgs.lib.nixosSystem {
+      sway = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
-        modules = [./hosts/desktop];
-      };
-
-      laptop = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
-        modules = [./hosts/laptop];
+        modules = [./hosts/sway];
       };
     };
 
     homeConfigurations = {
-      "ducng@desktop" = home-manager.lib.homeManagerConfiguration {
+      "d@sway" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages."x86_64-linux";
         extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./home/ducng/desktop];
-      };
-
-      "ducng@laptop" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages."x86_64-linux";
-        extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./home/ducng/laptop];
+        modules = [./home/d/sway];
       };
     };
   };

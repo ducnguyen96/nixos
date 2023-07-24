@@ -10,7 +10,6 @@
     [
       ./pkgs
       ./services
-      ./shell
     ]
     ++ (builtins.attrValues outputs.homeManagerModules);
 
@@ -38,7 +37,7 @@
   programs.home-manager.enable = true;
 
   home = {
-    username = "ducng";
+    username = "d";
     homeDirectory = "/home/${config.home.username}";
     stateVersion = "23.05";
   };
